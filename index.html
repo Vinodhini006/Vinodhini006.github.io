@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Vinodhini Babu is a B.Tech student specializing in AI & Data Science. Explore her portfolio showcasing her skills, certifications, and projects in web development, Python programming, and generative AI.">
+  <title>Vinodhini Babu | B.Tech AI & Data Science Student | Portfolio</title>
+
+
+  <!-- AOS -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+  <!-- FAVICON -->
+  <link class="favicon" rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+
+  <!-- Google material icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+
+   <!-- CSS -->
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preload" href="critical.css" as="style">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awsome/6.0.0-beta3/css/all.min.css">
+   <!-- FONT AWESOME -->
+  <script src="https://kit.fontawesome.com/07d83f1ff8.js" crossorigin="anonymous"></script>
+
+   <!-- TYPE JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"
+    integrity="sha512-3J8teBiHrSyaaRBajZyIEtpDsXdPq1gsznKWIVb5CnorQuFhjWGhWe54z8YNnHHr7MZuExb9m5kvf964HiT1Sw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+   <!-- jQUERY -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+   <!-- SWEET ALERT -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+
+   <!-- EMAIL JS -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+  <script type="text/javascript">
+    (function () {
+      emailjs.init("JdVy2E9rBlc2P4KgU");
+    })();
+    function sendMail() {
+    var fromName = document.getElementById("fromName").value;
+    var emailSender = document.getElementById("emailSender").value;
+    var subjectSender = document.getElementById("subjectSender").value;
+    var message = document.getElementById("message").value;
+
+    var templateParams = {
+        from_name: fromName,
+        to_name: "Vinodhini",
+        email: emailSender,
+        subject: subjectSender,
+        message: message
+    };
+    btn.innerHTML=<i class="fas fa-check"></i>
+
+    emailjs.send('service_0wx5ndp','template_pbbb9db', templateParams)
+        .then(function(response) {
+            console.log('SUCCESS!', response.status, response.text);
+            Swal.fire('Message Sent!', 'Thank you for contacting me.', 'success');
+        }, function(error) {
+            console.log('FAILED...', error);
+            Swal.fire('Message Failed', 'Please try again later.', 'error');
+        });
+}
+
+  </script>
+
+</head>
+
+<body>
+    <nav class="navbar">
+      <div class="progress-container">
+        <div class="progress-bar" id="myBar"></div>
+      </div> 
+      <div class="max-width">
+        <div class="logo">
+          <a href="#">My<span> Portfolio</span></a>
+        </div>
+        <ul class="menu">
+          <li><a href="#home" class="menu-btn">Home</a></li>
+          <li><a href="#about" class="menu-btn">About</a></li>
+          <li><a href="#services" class="menu-btn">Services</a></li>
+          <li><a href="#skills" class="menu-btn">Skills</a></li>
+          <li><a href="#contact" class="menu-btn">Contact</a></li>
+        </ul>
+        <div class="menu-btn">
+          <i class="material-icons">menu</i>
+        </div>
+      </div>
+    </nav>
+  <!-- Scroll to top button -->
+  <button id="btnScrollToTop" aria-label="Scroll to top">
+    <i class="material-icons">arrow_upward</i>
+  </button>
+  
+    
+  <!-- home section start-->
+  <section class="home" id="home">
+    <div class="max-width">
+      <div class="home-content">
+        <div class="text-1" data-aos="fade-up">Hello, my name is</div>
+        <div class="text-2">VINODHINI BABU</div>
+        <div class="text-3">Im a <span class="typing"></span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- about section -->
+  <section class="about" id="about">
+    <div class="max-width">
+      <h2 class="title" data-aos="fade-down" >About Me</h2>
+      <div class="about-content">
+        <div class="column left" data-aos="fade-right" >
+         <img src="images/IMG-20231123-WA0111 (1).jpg" alt="Vinodhini Babu Portrait" />
+
+        </div>
+        <div class="column right" data-aos="fade-up">
+          <div class="text">
+            I'm Vinodhini and Im a <span class="typing-2"></span>
+          </div>
+          <p class="paragraph">
+            I am a second-year B.Tech student specializing in Artificial Intelligence and Data Science at ERODE SENGUNDHAR ENGINEERING COLLEGE. I am eager to apply my foundational knowledge and hands-on skills in a practical internship setting. With a strong academic background in [Key Areas, like “machine learning,” “data analysis,” and “software development”], I am enthusiastic about contributing to innovative projects and gaining valuable industry experience.
+
+          </p>
+          <a href="https://drive.google.com/file/d/1PBdNXAcgHoMGHMM-S9fesLb9fSGyDGP4/view?usp=sharing">Download
+            Resume</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section class="services" id="services">
+    <div class="max-width">
+      <h2 class="title" data-aos="fade-down">My Certification</h2>
+      <div class="serv-content">
+        <div class="card" data-aos="flip-left">
+          <div class="box">
+            <i class="fa-solid fa-laptop-file"></i>
+            <div class="text"><b>RESPONSIVE WEB DESIGNER</b></div>
+            <div>
+              <p>I hold a certification in the Basics of Responsive Web Design from freeCodeCamp, a globally recognized platform for learning web development. This certification represents my proficiency in essential web design principles</p>
+            <a href="https://freecodecamp.org/certification/VinodhiniBabu/responsive-web-design" class="btn">View certificate</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card" data-aos="flip-left">
+          <div class="box">
+            <i class="fa-solid fa-microchip"></i>
+            <div class="text"><b>MY OWN GEN AI MODEL</b></div>
+            <div>
+              <p>
+                I earned a certificate in the workshop titled "AI for Students: Build Your Generative AI Model," led by AI expert Mr. Abhinav Devaguptapu. This hands-on workshop provided in-depth knowledge and practical experience
+              </p>
+              <a href="https://drive.google.com/file/d/1LaYALLmEFztuQ8cmnstU7UQ7zvnrBUx2/view?usp=drive_link" class="btn">View certificate</a>
+              <div><a href="https://vinodhini006.ccbp.tech/" class="btn">View My Project</a></div>
+            </div>
+          </div>
+        </div>
+        <div class="card" data-aos="flip-left">
+          <div class="box">
+            <i class="fa-brands fa-python"></i>
+            <div class="text"><b>COURSE COMPLETION</b></div>
+          <div>
+            <p>
+            I successfully completed the "Basics of Python" course offered by Infosys on June 4, 2024. This course provided a strong foundation in Python programming, covering essential topics such as data types, control structures, functions, and basic algorithms. 
+          </p>
+          <a href="https://drive.google.com/file/d/1FQUtjh51kkIj6MRIl-P0kX2w8dTYZihy/view?usp=drive_link" class="btn">View Certificate</a>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- skills section services -->
+  <section class="skills" id="skills">
+    <div class="max-width" data-aos="fade-down">
+      <h2 class="title" data-aos="fade-up">My Skills</h2>
+      <div class="skills-content">
+        <div class="column left">
+          <div class="text">
+            My creative skills & experiences.
+          </div>
+          <div><ul>
+            <b><li>Python Programming :</li></b>
+            <p>             Proficient in Python, with a solid understanding of data structures, algorithms, and object-oriented programming</p>
+            <b><li>Web Development :</li></b>
+            <p>Skilled in HTML, CSS, and JavaScript, with a certificate in Responsive Web Design. I have hands-on experience in building responsive and accessible websites, using frameworks like Bootstrap and CSS Grid.</p>
+            <b><li>Generative AI :</li></b>
+            Attended workshop in building generative AI models, with experience in leveraging machine learning techniques to create innovative solutions.
+        </ul>
+        </div>
+          <a href="#about">Know More</a>
+        </div>
+        <div class="column right skill-box">
+          <div class="icons">
+            <img src="images/skill-icons/icons8-css3.svg" alt="CSS Icon representing CSS3 skills" id="css-icon" data-aos="flip-left">
+            <img src="images/skill-icons/icons8-javascript.svg" alt="JavaScript Icon representing JavaScript skills" id="js-icon" data-aos="flip-left">
+            <img src="images/skill-icons/icons8-html-5.svg" alt="HTML5 Icon representing HTML skills" id="html-icon" data-aos="flip-left">
+            <img src="images/skill-icons/icons8-visual-studio-code-2019.svg" alt="VS Code Icon representing Visual Studio Code experience" id="vscode-icon" data-aos="flip-left">
+      </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact" id="contact">
+    <div class="max-width">
+      <h2 class="title" data-aos="fade-down">Contact Me</h2>
+      <div class="contact-content">
+        <div class="column left" data-aos="flip-left">
+          <div class="text">Let's Get in Touch</div>
+          <p class="paragraph-3"></p>
+          <div class="icons">
+            <div class="row">
+              <i class="fas fa-user"></i>
+              <div class="info">
+                <div class="head"><b>Name</b></div>
+                <div class="sub-title">Vinodhinibabu</div>
+              </div>
+            </div>
+            <div class="row">
+              <i class="fas fa-map-marker-alt"></i>
+              <div class="info">
+                <div class="head"><b>Address</b></div>
+                <div class="sub-title">75-NRK puram main road, Second railwaygate, TIRUPUR-641607</div>
+              </div>
+            </div>
+            <div class="row">
+              <i class="fas fa-envelope"></i>
+              <div class="info">
+                <div class="head"><b>Email</b></div>
+                <div class="sub-title">vinodhinibabu6@gmail.com</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="column right" data-aos="flip-right">
+          <div class="text">
+            Message Me
+          </div>
+          <form id="form" class="contact right">
+            <div class="fields">
+                <div class="field name">
+                    <label for="to_name">To Name</label>
+                    <input type="text" name="to_name" id="to_name">
+                </div>
+                <div class="field email">
+                    <label for="from_name">From Name</label>
+                    <input type="text" name="from_name" id="from_name">
+                </div>
+            </div>
+            <div class="field textarea">
+                <label for="message">Message</label>
+                <textarea name="message" id="message"></textarea>
+            </div>
+            <div class="button">
+                <button type="submit" id="button">Send Email</button>
+            </div>
+        </form>
+        
+          
+          <script type="text/javascript"
+            src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+          
+          <script type="text/javascript">
+            emailjs.init('JdVy2E9rBlc2P4KgU')
+          </script>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- footer section start -->
+  <footer>
+    <div class="text-center">
+      <span>
+        Created By <a href="#">vinodhinibabu</a> | <span class="far fa-copyright"> </span> <script>document.write(new Date().getFullYear())</script> All rights reserved.
+        <div>
+          <a href="https://www.linkedin.com/in/vinodhini-babu-a495412a3?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fab fa-linkedin"></i></a>
+          <a href="https://github.com/Vinodhini006"><i class="fab fa-github"></i></a>
+          <a href="https://wa.me/qr/AAQTYXXAKIXGE1"><i class="fa-brands fa-square-whatsapp"></i></a>
+        </div>
+      </span>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+  <script>
+    // When the user scrolls the page, execute myFunction 
+    window.onscroll = function() {myFunction()};
+    
+    function myFunction() {
+      var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+      var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+      var scrolled = (winScroll / height) * 100;
+      document.getElementById("myBar").style.width = scrolled + "%";
+    }
+    </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>AOS.init({easing : 'ease-in',delay: 100,duration: 300,offset:100});window.addEventListener('load', AOS.refresh);</script>
+</body>
+
+</html>
